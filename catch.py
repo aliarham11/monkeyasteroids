@@ -8,6 +8,6 @@ for r, d, f in os.walk('fireflies'):
         f_path = os.path.join(r, file)
         with open(f_path) as f_file:
             content = f_file.read()
-            print(content)
+            print('{} said: {}'.format(file, content))
         
         time.sleep(1)
